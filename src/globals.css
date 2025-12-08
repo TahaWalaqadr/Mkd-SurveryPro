@@ -4,87 +4,85 @@
 
 @layer base {
   :root {
-    /* Black and White Aesthetic */
-    --background: 0 0% 100%; /* White */
-    --foreground: 0 0% 3.9%; /* Black text */
+    /* SurveyPro Dark Theme (Navy: #1a1f3a, Charcoal: #2d3748, Yellow: #f4c542) */
+    --background: 230 40% 16%; /* Dark Navy */
+    --foreground: 210 40% 98%; /* White/Off-white text */
 
-    --card: 0 0% 98%; /* Off-white card background */
-    --card-foreground: 0 0% 3.9%;
+    --card: 218 27% 23%; /* Charcoal */
+    --card-foreground: 210 40% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 3.9%;
+    --popover: 218 27% 23%;
+    --popover-foreground: 210 40% 98%;
 
-    --primary: 0 0% 3.9%; /* Primary is Black */
-    --primary-foreground: 0 0% 98%; /* White text on black */
+    --primary: 43 89% 61%; /* Yellow Accent */
+    --primary-foreground: 222.2 47.4% 11.2%; /* Near Black text */
 
-    --secondary: 0 0% 90%; /* Light gray for secondary buttons */
-    --secondary-foreground: 0 0% 3.9%; /* Black text */
+    --secondary: 218 27% 23%; /* Charcoal for secondary buttons */
+    --secondary-foreground: 210 40% 98%; /* White text */
 
-    --muted: 0 0% 90%; /* Light gray */
-    --muted-foreground: 0 0% 45%; /* Medium gray text */
+    --muted: 218 27% 23%;
+    --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 0 0% 90%; /* Light gray accent */
-    --accent-foreground: 0 0% 3.9%;
+    --accent: 218 27% 23%;
+    --accent-foreground: 210 40% 98%;
 
-    --destructive: 0 84.2% 60.2%; /* Keeping red for destructive actions */
-    --destructive-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
 
-    --border: 0 0% 80%; /* Light gray border */
-    --input: 0 0% 98%; /* Off-white input background */
-    --ring: 0 0% 3.9%; /* Black ring focus */
+    --border: 218 27% 15%; /* Darker border */
+    --input: 218 27% 23%; /* Charcoal input background */
+    --ring: 43 89% 61%; /* Yellow ring */
 
     --radius: 0.5rem;
 
-    /* Sidebar uses the same B&W scheme */
-    --sidebar-background: 0 0% 3.9%; /* Black sidebar */
-    --sidebar-foreground: 0 0% 98%; /* White text */
-    --sidebar-primary: 0 0% 98%; /* White accent for active item */
-    --sidebar-primary-foreground: 0 0% 3.9%; /* Black text on white accent */
-    --sidebar-accent: 0 0% 15%; /* Dark gray hover */
-    --sidebar-accent-foreground: 0 0% 98%;
-    --sidebar-border: 0 0% 15%;
-    --sidebar-ring: 0 0% 98%;
+    --sidebar-background: 230 40% 16%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 43 89% 61%;
+    --sidebar-primary-foreground: 222.2 47.4% 11.2%;
+    --sidebar-accent: 218 27% 23%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 218 27% 15%;
+    --sidebar-ring: 43 89% 61%;
   }
 
   .dark {
-    /* Invert colors for dark mode (Black background, White foreground) */
-    --background: 0 0% 3.9%;
-    --foreground: 0 0% 98%;
+    /* Ensure dark mode uses the same scheme */
+    --background: 230 40% 16%;
+    --foreground: 210 40% 98%;
 
-    --card: 0 0% 15%;
-    --card-foreground: 0 0% 98%;
+    --card: 218 27% 23%;
+    --card-foreground: 210 40% 98%;
 
-    --popover: 0 0% 15%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 218 27% 23%;
+    --popover-foreground: 210 40% 98%;
 
-    --primary: 0 0% 98%; /* Primary is White */
-    --primary-foreground: 0 0% 3.9%; /* Black text on white */
+    --primary: 43 89% 61%;
+    --primary-foreground: 222.2 47.4% 11.2%;
 
-    --secondary: 0 0% 25%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 218 27% 23%;
+    --secondary-foreground: 210 40% 98%;
 
-    --muted: 0 0% 25%;
-    --muted-foreground: 0 0% 60%;
+    --muted: 218 27% 23%;
+    --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 0 0% 25%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 218 27% 23%;
+    --accent-foreground: 210 40% 98%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive-foreground: 210 40% 98%;
 
-    --border: 0 0% 25%;
-    --input: 0 0% 15%;
-    --ring: 0 0% 98%;
+    --border: 218 27% 15%;
+    --input: 218 27% 23%;
+    --ring: 43 89% 61%;
     
-    /* Sidebar uses the same B&W scheme */
-    --sidebar-background: 0 0% 3.9%;
-    --sidebar-foreground: 0 0% 98%;
-    --sidebar-primary: 0 0% 98%;
-    --sidebar-primary-foreground: 0 0% 3.9%;
-    --sidebar-accent: 0 0% 15%;
-    --sidebar-accent-foreground: 0 0% 98%;
-    --sidebar-border: 0 0% 15%;
-    --sidebar-ring: 0 0% 98%;
+    --sidebar-background: 230 40% 16%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 43 89% 61%;
+    --sidebar-primary-foreground: 222.2 47.4% 11.2%;
+    --sidebar-accent: 218 27% 23%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 218 27% 15%;
+    --sidebar-ring: 43 89% 61%;
   }
 }
 

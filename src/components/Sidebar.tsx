@@ -29,8 +29,7 @@ const navItems: NavItem[] = [
 const Logo = () => (
   <div className="flex items-center p-4 mb-6">
     <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center mr-3">
-      {/* Icon color changed to text-background for contrast against primary (black/white) */}
-      <BarChart3 className="w-6 h-6 text-background" />
+      <BarChart3 className="w-6 h-6 text-black" />
     </div>
     <h1 className="text-xl font-bold text-foreground">SurveyPro</h1>
   </div>
@@ -54,7 +53,7 @@ const Sidebar = () => {
                   "flex items-center p-3 rounded-lg transition-colors",
                   "hover:bg-sidebar-accent hover:text-sidebar-accent-foreground",
                   isActive
-                    ? "bg-sidebar-primary text-sidebar-primary-foreground font-semibold border-l-4 border-primary"
+                    ? "bg-sidebar-accent text-sidebar-accent-foreground font-semibold border-l-4 border-primary"
                     : "text-sidebar-foreground",
                 )}
               >
