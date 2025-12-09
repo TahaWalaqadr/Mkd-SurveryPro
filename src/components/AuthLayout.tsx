@@ -16,7 +16,10 @@ const AuthLayout: React.FC<AuthLayoutProps> = ({
   // Custom dark colors for Auth pages based on screenshots
   // Using gradient for background: #1a1d3e to #0f1226
   const darkBg = "bg-gradient-to-b from-[#1a1d3e] to-[#0f1226]";
-  const darkCard = "bg-[#2d3748] shadow-2xl border border-[#4b5563]"; // Dark card background
+  
+  // Custom glassmorphism card style: rgba(45, 50, 70, 0.6) to rgba(35, 40, 60, 0.8)
+  const darkCard = "shadow-2xl border border-[#4b5563] backdrop-blur-md bg-[linear-gradient(180deg,rgba(45,50,70,0.6)_0%,rgba(35,40,60,0.8)_100%)]"; 
+  
   const lightText = "text-white";
   const mutedDarkText = "text-gray-400";
   const yellowAccent = "bg-yellow-400";

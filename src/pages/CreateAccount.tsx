@@ -21,7 +21,7 @@ const CreateAccount = () => {
         id={id}
         type={type}
         placeholder={placeholder + (optional ? " (Optional)" : "")}
-        className="pr-10 bg-gray-700 border-gray-600 text-white placeholder:text-gray-400"
+        className="pr-10 bg-gray-800/70 border-gray-600 text-white placeholder:text-gray-400 focus:bg-gray-800/90 transition-colors"
       />
       <Icon className="absolute right-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400" />
     </div>
