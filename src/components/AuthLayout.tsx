@@ -14,7 +14,8 @@ const AuthLayout: React.FC<AuthLayoutProps> = ({
   subtitle,
 }) => {
   // Custom dark colors for Auth pages based on screenshots
-  const darkBg = "bg-[#101420]"; // Deep navy background
+  // Using gradient for background: #1a1d3e to #0f1226
+  const darkBg = "bg-gradient-to-b from-[#1a1d3e] to-[#0f1226]";
   const darkCard = "bg-[#2d3748] shadow-2xl border border-[#4b5563]"; // Dark card background
   const lightText = "text-white";
   const mutedDarkText = "text-gray-400";
