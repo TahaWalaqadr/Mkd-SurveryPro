@@ -18,14 +18,14 @@ const AuthLayout: React.FC<AuthLayoutProps> = ({
         {/* Logo */}
         <div className="flex flex-col items-center mb-8">
           <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-3">
-            <BarChart3 className="w-8 h-8 text-black" />
+            <BarChart3 className="w-8 h-8 text-white" /> {/* White icon on black primary background */}
           </div>
           <h1 className="text-3xl font-bold text-foreground">{title}</h1>
           <p className="text-sm text-muted-foreground mt-1">{subtitle}</p>
         </div>
 
         {/* Form Card */}
-        <div className="bg-card p-8 rounded-lg shadow-2xl border border-border">
+        <div className="bg-card p-8 rounded-lg shadow-xl border border-border">
           {children}
         </div>
 

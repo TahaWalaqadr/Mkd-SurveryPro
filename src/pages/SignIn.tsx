@@ -39,7 +39,7 @@ const SignIn = () => {
 
   return (
     <AuthLayout title="Welcome Back" subtitle="Sign in to your account">
-      {/* Progress Indicator */}
+      {/* Progress Indicator - Using primary color (black) */}
       <div className="flex justify-center space-x-2 mb-6">
         <div className="w-2 h-2 bg-primary rounded-full"></div>
         <div className="w-2 h-2 bg-primary rounded-full"></div>
@@ -52,7 +52,7 @@ const SignIn = () => {
 
         <div className="flex items-center justify-between pt-2">
           <div className="flex items-center space-x-2">
-            <Checkbox id="remember" className="border-primary data-[state=checked]:bg-primary data-[state=checked]:text-black" />
+            <Checkbox id="remember" className="border-border data-[state=checked]:bg-primary data-[state=checked]:text-white" />
             <Label htmlFor="remember" className="text-sm text-muted-foreground">
               Remember me
             </Label>
@@ -62,7 +62,7 @@ const SignIn = () => {
           </Link>
         </div>
 
-        <Button type="submit" className="w-full bg-primary text-black hover:bg-primary/90 mt-6">
+        <Button type="submit" className="w-full bg-primary text-white hover:bg-primary/90 mt-6">
           Sign In
           <ArrowRight className="w-4 h-4 ml-2" />
         </Button>

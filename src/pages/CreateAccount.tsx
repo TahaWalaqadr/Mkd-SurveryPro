@@ -31,7 +31,7 @@ const CreateAccount = () => {
       title="Create Account"
       subtitle="Join the future of survey management"
     >
-      {/* Progress Indicator */}
+      {/* Progress Indicator - Using primary color (black) */}
       <div className="flex justify-center space-x-2 mb-6">
         <div className="w-2 h-2 bg-primary rounded-full"></div>
         <div className="w-2 h-2 bg-primary rounded-full"></div>
@@ -45,7 +45,7 @@ const CreateAccount = () => {
         {renderInput("phone", "Phone Number", Phone, "tel")}
 
         <div className="flex items-start space-x-2 pt-2">
-          <Checkbox id="terms" className="border-primary data-[state=checked]:bg-primary data-[state=checked]:text-black" />
+          <Checkbox id="terms" className="border-border data-[state=checked]:bg-primary data-[state=checked]:text-white" />
           <Label
             htmlFor="terms"
             className="text-sm font-normal leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-muted-foreground"
@@ -62,7 +62,7 @@ const CreateAccount = () => {
           </Label>
         </div>
 
-        <Button type="submit" className="w-full bg-primary text-black hover:bg-primary/90 mt-6">
+        <Button type="submit" className="w-full bg-primary text-white hover:bg-primary/90 mt-6">
           Create Account
           <ArrowRight className="w-4 h-4 ml-2" />
         </Button>
