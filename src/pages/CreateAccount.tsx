@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
+import { cn } from "@/lib/utils";
 
 const CreateAccount = () => {
   const renderInput = (
@@ -20,9 +21,9 @@ const CreateAccount = () => {
         id={id}
         type={type}
         placeholder={placeholder + (optional ? " (Optional)" : "")}
-        className="pr-10 bg-input border-border text-foreground"
+        className="pr-10 bg-gray-700 border-gray-600 text-white placeholder:text-gray-400"
       />
-      <Icon className="absolute right-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+      <Icon className="absolute right-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400" />
     </div>
   );
 
@@ -31,11 +32,11 @@ const CreateAccount = () => {
       title="Create Account"
       subtitle="Join the future of survey management"
     >
-      {/* Progress Indicator - Using primary color (black) */}
+      {/* Progress Indicator - Using yellow accent color */}
       <div className="flex justify-center space-x-2 mb-6">
-        <div className="w-2 h-2 bg-primary rounded-full"></div>
-        <div className="w-2 h-2 bg-primary rounded-full"></div>
-        <div className="w-2 h-2 bg-primary rounded-full"></div>
+        <div className="w-2 h-2 bg-yellow-400 rounded-full"></div>
+        <div className="w-2 h-2 bg-yellow-400 rounded-full"></div>
+        <div className="w-2 h-2 bg-yellow-400 rounded-full"></div>
       </div>
 
       <form className="space-y-4">
@@ -45,32 +46,35 @@ const CreateAccount = () => {
         {renderInput("phone", "Phone Number", Phone, "tel")}
 
         <div className="flex items-start space-x-2 pt-2">
-          <Checkbox id="terms" className="border-border data-[state=checked]:bg-primary data-[state=checked]:text-white" />
+          <Checkbox 
+            id="terms" 
+            className="border-gray-500 data-[state=checked]:bg-yellow-400 data-[state=checked]:text-black" 
+          />
           <Label
             htmlFor="terms"
-            className="text-sm font-normal leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-muted-foreground"
+            className="text-sm font-normal leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-gray-400"
           >
             I agree to the{" "}
-            <Link to="#" className="text-primary hover:underline">
+            <Link to="#" className="text-yellow-400 hover:underline">
               Terms of Service
             </Link>{" "}
             and{" "}
-            <Link to="#" className="text-primary hover:underline">
+            <Link to="#" className="text-yellow-400 hover:underline">
               Privacy Policy
             </Link>
             .
           </Label>
         </div>
 
-        <Button type="submit" className="w-full bg-primary text-white hover:bg-primary/90 mt-6">
+        <Button type="submit" className="w-full bg-yellow-400 text-black hover:bg-yellow-500 mt-6 font-semibold">
           Create Account
           <ArrowRight className="w-4 h-4 ml-2" />
         </Button>
       </form>
 
       <div className="mt-6 text-center text-sm">
-        Already have an account?{" "}
-        <Link to="/signin" className="text-primary hover:underline">
+        <span className="text-gray-400">Already have an account?</span>{" "}
+        <Link to="/signin" className="text-yellow-400 hover:underline">
           Sign in
         </Link>
       </div>
